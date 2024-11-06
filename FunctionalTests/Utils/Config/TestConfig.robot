@@ -13,7 +13,7 @@ Setup browser context and Navigate to the web app
     ${options}  Evaluate  sys.modules['selenium.webdriver'].ChromeOptions()  sys
     Call Method  ${options}  add_argument  --user-agent\=${UserAgent}
     Call Method  ${options}  add_argument  --window-size\=1920,1080
-#    Call Method  ${options}  add_argument  --headless
+    Call Method  ${options}  add_argument  --headless
     Call Method    ${options}    add_experimental_option    prefs    ${prefs}
     Open Browser    ${webAppUrl}    ${browserName}    options=${options}
     ${navigatedAppUrl}   Get Location
