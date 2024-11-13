@@ -1,55 +1,55 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0 (Python 3.12.1 on win32)" generated="2024-11-06T22:06:58.805599" rpa="false" schemaversion="5">
-<suite id="s1" name="TestCases" source="E:\Kirill_Milestone1\FunctionalTests\TestCases">
-<suite id="s1-s1" name="VerifyCsvContent" source="E:\Kirill_Milestone1\FunctionalTests\TestCases\VerifyCsvContent.robot">
+<robot generator="Robot 7.0.1 (Python 3.12.1 on win32)" generated="2024-11-13T20:46:05.811103" rpa="false" schemaversion="5">
+<suite id="s1" name="TestCases" source="D:\Kiriil-RobotFramework_Milestone1-main\FunctionalTests\TestCases">
+<suite id="s1-s1" name="VerifyCsvContent" source="D:\Kiriil-RobotFramework_Milestone1-main\FunctionalTests\TestCases\VerifyCsvContent.robot">
 <kw name="Setup browser context and Navigate to the web app" owner="TestConfig" type="SETUP">
 <kw name="Project Root Directory" owner="HelperMethods">
-<msg time="2024-11-06T22:06:59.216645" level="INFO">${projectRootDirectory} = E:\Kirill_Milestone1</msg>
+<msg time="2024-11-13T20:46:06.231978" level="INFO">${projectRootDirectory} = D:\Kiriil-RobotFramework_Milestone1-main</msg>
 <var>${projectRootDirectory}</var>
-<status status="PASS" start="2024-11-06T22:06:59.215680" elapsed="0.000965"/>
+<status status="PASS" start="2024-11-13T20:46:06.230981" elapsed="0.000997"/>
 </kw>
 <kw name="Catenate" owner="BuiltIn">
-<msg time="2024-11-06T22:06:59.217646" level="INFO">${defaultDownloadDirectory} = E:\Kirill_Milestone1\Downloads</msg>
+<msg time="2024-11-13T20:46:06.232975" level="INFO">${defaultDownloadDirectory} = D:\Kiriil-RobotFramework_Milestone1-main\Downloads\</msg>
 <var>${defaultDownloadDirectory}</var>
 <arg>${projectRootDirectory}${DefaultDownloadDirectory}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.217646" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.231978" elapsed="0.000997"/>
 </kw>
 <kw name="Create Dictionary" owner="BuiltIn">
-<msg time="2024-11-06T22:06:59.218647" level="INFO">${prefs} = {'download.default_directory': 'E:\\Kirill_Milestone1\\Downloads'}</msg>
+<msg time="2024-11-13T20:46:06.232975" level="INFO">${prefs} = {'download.default_directory': 'D:\\Kiriil-RobotFramework_Milestone1-main\\Downloads\\'}</msg>
 <var>${prefs}</var>
 <arg>download.default_directory=${defaultDownloadDirectory}</arg>
 <doc>Creates and returns a dictionary based on the given ``items``.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.218647" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.232975" elapsed="0.000000"/>
 </kw>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-11-06T22:06:59.218647" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001EF3855E510&gt;</msg>
+<msg time="2024-11-13T20:46:06.233973" level="INFO">${options} = &lt;selenium.webdriver.chrome.options.Options object at 0x000001B8B2EAECC0&gt;</msg>
 <var>${options}</var>
 <arg>sys.modules['selenium.webdriver'].ChromeOptions()</arg>
 <arg>sys</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.218647" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.232975" elapsed="0.000998"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--user-agent\=${UserAgent}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.219643" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.233973" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--window-size\=1920,1080</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.219643" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.233973" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
 <arg>add_argument</arg>
 <arg>--headless</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.219643" elapsed="0.000998"/>
+<status status="PASS" start="2024-11-13T20:46:06.234970" elapsed="0.000000"/>
 </kw>
 <kw name="Call Method" owner="BuiltIn">
 <arg>${options}</arg>
@@ -57,31 +57,31 @@
 <arg>prefs</arg>
 <arg>${prefs}</arg>
 <doc>Calls the named method of the given object with the provided arguments.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.220641" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:06.234970" elapsed="0.000000"/>
 </kw>
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:06:59.220641" level="INFO">Opening browser 'Chrome' to base url 'https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020?resource=download'.</msg>
+<msg time="2024-11-13T20:46:06.234970" level="INFO">Opening browser 'Chrome' to base url 'https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020?resource=download'.</msg>
 <arg>${webAppUrl}</arg>
 <arg>${browserName}</arg>
 <arg>options=${options}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-11-06T22:06:59.220641" elapsed="4.874581"/>
+<status status="PASS" start="2024-11-13T20:46:06.234970" elapsed="3.338526"/>
 </kw>
 <kw name="Get Location" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:04.111179" level="INFO">${navigatedAppUrl} = https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020?resource=download</msg>
+<msg time="2024-11-13T20:46:09.580465" level="INFO">${navigatedAppUrl} = https://www.kaggle.com/datasets/rohanrao/formula-1-world-championship-1950-2020?resource=download</msg>
 <var>${navigatedAppUrl}</var>
 <doc>Returns the current browser window URL.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.095222" elapsed="0.015957"/>
+<status status="PASS" start="2024-11-13T20:46:09.573496" elapsed="0.006969"/>
 </kw>
 <kw name="Should Be Equal As Strings" owner="BuiltIn">
 <arg>${navigatedAppUrl}</arg>
 <arg>${webAppUrl}</arg>
 <doc>Fails if objects are unequal after converting them to strings.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.112176" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:09.580465" elapsed="0.000000"/>
 </kw>
 <arg>${AppUrl}</arg>
 <arg>${ChromeBrowser}</arg>
-<status status="PASS" start="2024-11-06T22:06:59.215680" elapsed="4.896496"/>
+<status status="PASS" start="2024-11-13T20:46:06.230981" elapsed="3.349484"/>
 </kw>
 <test id="s1-s1-t1" name="Download CSV file and verify content from UI" line="21">
 <kw name="Click sign in button from header" owner="Header">
@@ -89,15 +89,15 @@
 <arg>${SignInButton}</arg>
 <arg>${Timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.113173" elapsed="0.081782"/>
+<status status="PASS" start="2024-11-13T20:46:09.581462" elapsed="0.992740"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:04.195952" level="INFO">Clicking element '//button/span[text()='Sign In']'.</msg>
+<msg time="2024-11-13T20:46:10.574202" level="INFO">Clicking element '//button/span[text()='Sign In']'.</msg>
 <arg>${SignInButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.195952" elapsed="0.095744"/>
+<status status="PASS" start="2024-11-13T20:46:10.574202" elapsed="0.092753"/>
 </kw>
-<status status="PASS" start="2024-11-06T22:07:04.112176" elapsed="0.179520"/>
+<status status="PASS" start="2024-11-13T20:46:09.581462" elapsed="1.086490"/>
 </kw>
 <kw name="Login user with email and password" owner="SignInPage">
 <kw name="User enters username and password" owner="SignInPage">
@@ -105,484 +105,1465 @@
 <arg>${SignInWithEmailOptionButton}</arg>
 <arg>${Timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.292694" elapsed="0.354745"/>
+<status status="PASS" start="2024-11-13T20:46:10.667952" elapsed="0.234374"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:04.648429" level="INFO">Clicking element '//button/span[contains(text(),'with Email')]'.</msg>
+<msg time="2024-11-13T20:46:10.903324" level="INFO">Clicking element '//button/span[contains(text(),'with Email')]'.</msg>
 <arg>${SignInWithEmailOptionButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.647439" elapsed="0.118646"/>
+<status status="PASS" start="2024-11-13T20:46:10.902326" elapsed="0.070810"/>
 </kw>
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${EmailInputField}</arg>
 <arg>${Timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.766085" elapsed="0.029918"/>
+<status status="PASS" start="2024-11-13T20:46:10.973136" elapsed="0.026928"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:04.796003" level="INFO">Typing text 'qatest09011@gmail.com' into text field '//input[@name='email']'.</msg>
+<msg time="2024-11-13T20:46:11.000064" level="INFO">Typing text 'qatest09011@gmail.com' into text field '//input[@name='email']'.</msg>
 <arg>${EmailInputField}</arg>
 <arg>${username}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.796003" elapsed="0.196513"/>
+<status status="PASS" start="2024-11-13T20:46:11.000064" elapsed="0.176530"/>
 </kw>
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:04.993486" level="INFO">Typing text 'Sss1234!' into text field '//input[@name='password']'.</msg>
+<msg time="2024-11-13T20:46:11.176594" level="INFO">Typing text 'Sss1234!' into text field '//input[@name='password']'.</msg>
 <arg>${PasswordInputField}</arg>
 <arg>${password}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:04.993486" elapsed="0.127689"/>
+<status status="PASS" start="2024-11-13T20:46:11.176594" elapsed="0.125988"/>
 </kw>
 <arg>${username}</arg>
 <arg>${password}</arg>
-<status status="PASS" start="2024-11-06T22:07:04.292694" elapsed="0.828481"/>
+<status status="PASS" start="2024-11-13T20:46:10.667952" elapsed="0.634630"/>
 </kw>
 <kw name="Click sign in button" owner="SignInPage">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${SignInButton}</arg>
 <arg>${Timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-11-06T22:07:05.121175" elapsed="0.019945"/>
+<status status="PASS" start="2024-11-13T20:46:11.303591" elapsed="0.020932"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:05.142118" level="INFO">Clicking element '//button/span[text()='Sign In']'.</msg>
+<msg time="2024-11-13T20:46:11.324523" level="INFO">Clicking element '//button/span[text()='Sign In']'.</msg>
 <arg>${SignInButton}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:05.142118" elapsed="0.050864"/>
+<status status="PASS" start="2024-11-13T20:46:11.324523" elapsed="0.061032"/>
 </kw>
-<status status="PASS" start="2024-11-06T22:07:05.121175" elapsed="0.071807"/>
+<status status="PASS" start="2024-11-13T20:46:11.303591" elapsed="0.081964"/>
 </kw>
 <arg>${UserEmail}</arg>
 <arg>${UserPassword}</arg>
-<status status="PASS" start="2024-11-06T22:07:04.291696" elapsed="0.901286"/>
+<status status="PASS" start="2024-11-13T20:46:10.667952" elapsed="0.717603"/>
 </kw>
-<kw name="Select CSV file from data explorer section" owner="DataSetsPage">
-<kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-06T22:07:06.194753" level="INFO">Slept 1 second.</msg>
-<arg>1</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-06T22:07:05.194007" elapsed="1.000746"/>
+<kw name="Delete All Files From Folder">
+<kw name="Project Root Directory" owner="HelperMethods">
+<msg time="2024-11-13T20:46:11.386579" level="INFO">${projectRootDirectory} = D:\Kiriil-RobotFramework_Milestone1-main</msg>
+<var>${projectRootDirectory}</var>
+<status status="PASS" start="2024-11-13T20:46:11.385555" elapsed="0.001024"/>
 </kw>
-<kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:06.777198" level="INFO">${dataExplorerFiles} = []</msg>
-<var>${dataExplorerFiles}</var>
-<arg>${DataExplorerFilesList}</arg>
-<doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:06.194753" elapsed="0.582445"/>
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2024-11-13T20:46:11.386579" level="INFO" html="true">Listing contents of directory '&lt;a href="file://D:\Kiriil-RobotFramework_Milestone1-main\Downloads"&gt;D:\Kiriil-RobotFramework_Milestone1-main\Downloads&lt;/a&gt;'.</msg>
+<msg time="2024-11-13T20:46:11.386579" level="INFO">0 files:
+</msg>
+<msg time="2024-11-13T20:46:11.386579" level="INFO">${files} = []</msg>
+<var>${files}</var>
+<arg>${projectRootDirectory}${DefaultDownloadDirectory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="PASS" start="2024-11-13T20:46:11.386579" elapsed="0.000000"/>
 </kw>
 <for flavor="IN">
 <iter>
-<kw name="Get Text" owner="SeleniumLibrary">
-<var>${fileName}</var>
-<arg>${element}</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:06.777198" elapsed="0.000000"/>
+<kw name="Remove File" owner="OperatingSystem">
+<arg>${projectRootDirectory}${DefaultDownloadDirectory}${file}</arg>
+<doc>Removes a file with the given path.</doc>
+<status status="NOT RUN" start="2024-11-13T20:46:11.387549" elapsed="0.000000"/>
 </kw>
-<if>
-<branch type="IF" condition="'${fileName}' == '${fileNameToDownload}'">
-<kw name="Click Element" owner="SeleniumLibrary">
-<arg>${element}</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:06.778195" elapsed="0.000000"/>
+<kw name="Log" owner="BuiltIn">
+<arg>All files have been deleted.</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="NOT RUN" start="2024-11-13T20:46:11.387549" elapsed="0.000000"/>
 </kw>
-<kw name="Sleep" owner="BuiltIn">
-<arg>2</arg>
-<doc>Pauses the test executed for the given time.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:06.778195" elapsed="0.000000"/>
-</kw>
-<break>
-<status status="NOT RUN" start="2024-11-06T22:07:06.778195" elapsed="0.000000"/>
-</break>
-<status status="NOT RUN" start="2024-11-06T22:07:06.778195" elapsed="0.000000"/>
-</branch>
-<status status="NOT RUN" start="2024-11-06T22:07:06.778195" elapsed="0.001004"/>
-</if>
-<var name="${element}"/>
-<status status="NOT RUN" start="2024-11-06T22:07:06.777198" elapsed="0.002001"/>
+<var name="${file}"/>
+<status status="NOT RUN" start="2024-11-13T20:46:11.387549" elapsed="0.000000"/>
 </iter>
-<var>${element}</var>
-<value>@{dataExplorerFiles}</value>
-<status status="NOT RUN" start="2024-11-06T22:07:06.777198" elapsed="0.002001"/>
+<var>${file}</var>
+<value>@{files}</value>
+<status status="NOT RUN" start="2024-11-13T20:46:11.386579" elapsed="0.000970"/>
 </for>
-<arg>${DataExplorerCsvFileToDownload}</arg>
-<status status="PASS" start="2024-11-06T22:07:05.192982" elapsed="1.586217"/>
+<status status="PASS" start="2024-11-13T20:46:11.385555" elapsed="0.001994"/>
 </kw>
 <kw name="Click the data explorer file download icon" owner="DataSetsPage">
 <kw name="Wait Until Element Is Enabled" owner="SeleniumLibrary">
 <arg>${DataExplorerFileDownloadIcon}</arg>
 <arg>${Timeout}</arg>
 <doc>Waits until the element ``locator`` is enabled.</doc>
-<status status="PASS" start="2024-11-06T22:07:06.780191" elapsed="1.123598"/>
+<status status="PASS" start="2024-11-13T20:46:11.387549" elapsed="3.141056"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-06T22:07:08.905507" level="INFO">Slept 1 second.</msg>
+<msg time="2024-11-13T20:46:15.529689" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-06T22:07:07.904786" elapsed="1.000721"/>
+<status status="PASS" start="2024-11-13T20:46:14.529633" elapsed="1.000056"/>
 </kw>
 <kw name="Scroll Element Into View" owner="SeleniumLibrary">
 <arg>${SummaryHeader}</arg>
 <doc>Scrolls the element identified by ``locator`` into view.</doc>
-<status status="PASS" start="2024-11-06T22:07:08.905507" elapsed="0.508180"/>
+<status status="PASS" start="2024-11-13T20:46:15.529689" elapsed="0.396954"/>
 </kw>
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:09.414684" level="INFO">Clicking element '//div/span[text()='get_app']'.</msg>
+<msg time="2024-11-13T20:46:15.927646" level="INFO">Clicking element '//div/span[text()='get_app']'.</msg>
 <arg>${DataExplorerFileDownloadIcon}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:09.413687" elapsed="2.303376"/>
+<status status="PASS" start="2024-11-13T20:46:15.927646" elapsed="1.111595"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-06T22:07:14.717849" level="INFO">Slept 3 seconds.</msg>
+<msg time="2024-11-13T20:46:20.039638" level="INFO">Slept 3 seconds.</msg>
 <arg>3</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-06T22:07:11.717063" elapsed="3.000786"/>
+<status status="PASS" start="2024-11-13T20:46:17.039241" elapsed="3.000397"/>
 </kw>
-<status status="PASS" start="2024-11-06T22:07:06.779199" elapsed="7.938650"/>
+<status status="PASS" start="2024-11-13T20:46:11.387549" elapsed="8.652089"/>
 </kw>
 <kw name="Fetch data for circuit from data explorer table" owner="DataSetsPage">
 <kw name="Create List" owner="BuiltIn">
-<msg time="2024-11-06T22:07:14.718849" level="INFO">${data} = []</msg>
+<msg time="2024-11-13T20:46:20.041603" level="INFO">${data} = []</msg>
 <var>${data}</var>
 <doc>Returns a list containing given items.</doc>
-<status status="PASS" start="2024-11-06T22:07:14.718849" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:20.040607" elapsed="0.000996"/>
 </kw>
 <kw name="Set Variable" owner="BuiltIn">
-<msg time="2024-11-06T22:07:14.718849" level="INFO">${count} = 0</msg>
+<msg time="2024-11-13T20:46:20.041603" level="INFO">${count} = 0</msg>
 <var>${count}</var>
 <arg>0</arg>
 <doc>Returns the given values which can then be assigned to a variables.</doc>
-<status status="PASS" start="2024-11-06T22:07:14.718849" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:20.041603" elapsed="0.000000"/>
 </kw>
 <kw name="Sleep" owner="BuiltIn">
-<msg time="2024-11-06T22:07:15.719342" level="INFO">Slept 1 second.</msg>
+<msg time="2024-11-13T20:46:21.043047" level="INFO">Slept 1 second.</msg>
 <arg>1</arg>
 <doc>Pauses the test executed for the given time.</doc>
-<status status="PASS" start="2024-11-06T22:07:14.718849" elapsed="1.000493"/>
+<status status="PASS" start="2024-11-13T20:46:20.041603" elapsed="1.001444"/>
 </kw>
 <kw name="Get WebElements" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.737295" level="INFO">${circuits} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="bc6a77591576919ad41ad5cb44afdce5", element="f.99FA4D25B8C4627AC3CDEB8385D81B36.d.49B7B29E10168BE013CB661CB7C95BF2.e.70")&gt;, &lt;selenium.webdriv...</msg>
+<msg time="2024-11-13T20:46:21.060034" level="INFO">${circuits} = [&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.75")&gt;, &lt;selenium.webdriv...</msg>
 <var>${circuits}</var>
 <arg>${CircuitsTableReferenceNameList}</arg>
 <doc>Returns a list of WebElement objects matching the ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.719342" elapsed="0.017953"/>
+<status status="PASS" start="2024-11-13T20:46:21.043047" elapsed="0.016987"/>
+</kw>
+<kw name="Get Length" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.060034" level="INFO">Length is 50.</msg>
+<msg time="2024-11-13T20:46:21.060034" level="INFO">${countone} = 50</msg>
+<var>${countone}</var>
+<arg>${circuits}</arg>
+<doc>Returns and logs the length of the given item as an integer.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.060034" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.061032" level="INFO">50</msg>
+<arg>${countone}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.060034" elapsed="0.000998"/>
 </kw>
 <for flavor="IN">
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-11-06T22:07:15.738292" level="INFO">${count} = 1</msg>
+<msg time="2024-11-13T20:46:21.061032" level="INFO">${count} = 1</msg>
 <var>${count}</var>
 <arg>${count} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.738292" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.061032" elapsed="0.000000"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.757242" level="INFO">${referenceName} = albert_park</msg>
+<msg time="2024-11-13T20:46:21.077954" level="INFO">${referenceName} = albert_park</msg>
 <var>${referenceName}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.738292" elapsed="0.018950"/>
-</kw>
-<if>
-<branch type="IF" condition="'${referenceName}' == '${circuitName}'">
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<var>${totalCloumns}</var>
-<arg>xpath=(//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:15.757242" elapsed="0.000000"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Get Text" owner="SeleniumLibrary">
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:15.758239" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.061032" elapsed="0.016922"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="NOT RUN" start="2024-11-06T22:07:15.758239" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.077954" elapsed="0.000000"/>
 </kw>
-<var name="${counter}"/>
-<status status="NOT RUN" start="2024-11-06T22:07:15.758239" elapsed="0.000000"/>
-</iter>
-<var>${counter}</var>
-<value>1</value>
-<value>${totalCloumns} + 1</value>
-<status status="NOT RUN" start="2024-11-06T22:07:15.758239" elapsed="0.000000"/>
-</for>
-<break>
-<status status="NOT RUN" start="2024-11-06T22:07:15.758239" elapsed="0.000000"/>
-</break>
-<status status="NOT RUN" start="2024-11-06T22:07:15.757242" elapsed="0.000997"/>
-</branch>
-<status status="PASS" start="2024-11-06T22:07:15.757242" elapsed="0.000997"/>
-</if>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="bc6a77591576919ad41ad5cb44afdce5", element="f.99FA4D25B8C4627AC3CDEB8385D81B36.d.49B7B29E10168BE013CB661CB7C95BF2.e.70")&gt;</var>
-<status status="PASS" start="2024-11-06T22:07:15.738292" elapsed="0.019947"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.75")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.061032" elapsed="0.016922"/>
 </iter>
 <iter>
 <kw name="Evaluate" owner="BuiltIn">
-<msg time="2024-11-06T22:07:15.759236" level="INFO">${count} = 2</msg>
+<msg time="2024-11-13T20:46:21.078951" level="INFO">${count} = 2</msg>
 <var>${count}</var>
 <arg>${count} + 1</arg>
 <doc>Evaluates the given expression in Python and returns the result.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.758239" elapsed="0.000997"/>
+<status status="PASS" start="2024-11-13T20:46:21.077954" elapsed="0.000997"/>
 </kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.768212" level="INFO">${referenceName} = sepang</msg>
+<msg time="2024-11-13T20:46:21.087928" level="INFO">${referenceName} = sepang</msg>
 <var>${referenceName}</var>
 <arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.759236" elapsed="0.008976"/>
-</kw>
-<if>
-<branch type="IF" condition="'${referenceName}' == '${circuitName}'">
-<kw name="Get Element Count" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.781177" level="INFO">${totalCloumns} = 9</msg>
-<var>${totalCloumns}</var>
-<arg>xpath=(//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div</arg>
-<doc>Returns the number of elements matching ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.769210" elapsed="0.011967"/>
-</kw>
-<for flavor="IN RANGE">
-<iter>
-<kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.803119" level="INFO">${columnValue} = 2</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
-<doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.782175" elapsed="0.020944"/>
+<status status="PASS" start="2024-11-13T20:46:21.078951" elapsed="0.008977"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.803119" elapsed="0.000997"/>
+<status status="PASS" start="2024-11-13T20:46:21.087928" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">1</var>
-<status status="PASS" start="2024-11-06T22:07:15.782175" elapsed="0.021941"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.76")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.077954" elapsed="0.009974"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.088924" level="INFO">${count} = 3</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.088924" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.824064" level="INFO">${columnValue} = sepang</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.099895" level="INFO">${referenceName} = bahrain</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.804116" elapsed="0.019948"/>
+<status status="PASS" start="2024-11-13T20:46:21.088924" elapsed="0.010971"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.824064" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.099895" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">2</var>
-<status status="PASS" start="2024-11-06T22:07:15.804116" elapsed="0.019948"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.77")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.087928" elapsed="0.011967"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.100894" level="INFO">${count} = 4</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.100894" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.845012" level="INFO">${columnValue} = Sepang International Circuit</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.111863" level="INFO">${referenceName} = catalunya</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.825061" elapsed="0.020943"/>
+<status status="PASS" start="2024-11-13T20:46:21.100894" elapsed="0.010969"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.846004" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.112861" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">3</var>
-<status status="PASS" start="2024-11-06T22:07:15.825061" elapsed="0.020943"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.78")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.100894" elapsed="0.011967"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.112861" level="INFO">${count} = 5</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.112861" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.865959" level="INFO">${columnValue} = Kuala Lumpur</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.128818" level="INFO">${referenceName} = istanbul</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.846004" elapsed="0.019955"/>
+<status status="PASS" start="2024-11-13T20:46:21.113858" elapsed="0.014960"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.865959" elapsed="0.000990"/>
+<status status="PASS" start="2024-11-13T20:46:21.129816" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">4</var>
-<status status="PASS" start="2024-11-06T22:07:15.846004" elapsed="0.020945"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.79")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.112861" elapsed="0.016955"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.129816" level="INFO">${count} = 6</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.129816" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.884921" level="INFO">${columnValue} = Malaysia</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.147767" level="INFO">${referenceName} = monaco</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.866949" elapsed="0.018955"/>
+<status status="PASS" start="2024-11-13T20:46:21.129816" elapsed="0.017951"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.885904" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.147767" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">5</var>
-<status status="PASS" start="2024-11-06T22:07:15.866949" elapsed="0.018955"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.80")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.129816" elapsed="0.017951"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.147767" level="INFO">${count} = 7</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.147767" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.906847" level="INFO">${columnValue} = 2.76083</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.167713" level="INFO">${referenceName} = villeneuve</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.885904" elapsed="0.020943"/>
+<status status="PASS" start="2024-11-13T20:46:21.148764" elapsed="0.018949"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.906847" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.167713" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">6</var>
-<status status="PASS" start="2024-11-06T22:07:15.885904" elapsed="0.020943"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.81")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.147767" elapsed="0.019946"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.168711" level="INFO">${count} = 8</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.168711" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.926794" level="INFO">${columnValue} = 101.738</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.197634" level="INFO">${referenceName} = magny_cours</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.907869" elapsed="0.018925"/>
+<status status="PASS" start="2024-11-13T20:46:21.168711" elapsed="0.028923"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.926794" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.198632" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">7</var>
-<status status="PASS" start="2024-11-06T22:07:15.907869" elapsed="0.018925"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.82")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.167713" elapsed="0.030919"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.198632" level="INFO">${count} = 9</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.198632" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:15.989626" level="INFO">${columnValue} = 18</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.213590" level="INFO">${referenceName} = silverstone</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.926794" elapsed="0.062832"/>
+<status status="PASS" start="2024-11-13T20:46:21.199628" elapsed="0.013962"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.989626" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.213590" elapsed="0.000999"/>
 </kw>
-<var name="${counter}">8</var>
-<status status="PASS" start="2024-11-06T22:07:15.926794" elapsed="0.062832"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.83")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.198632" elapsed="0.015957"/>
 </iter>
 <iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.214589" level="INFO">${count} = 10</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.214589" elapsed="0.000000"/>
+</kw>
 <kw name="Get Text" owner="SeleniumLibrary">
-<msg time="2024-11-06T22:07:16.011567" level="INFO">${columnValue} = http://en.wikipedia.org/wiki/Sepang_International_Circuit</msg>
-<var>${columnValue}</var>
-<arg>xpath=((//div/span[@class='sc-jcHdAB iJqDzd']/div)[${count}]/div)[${counter}]</arg>
+<msg time="2024-11-13T20:46:21.225559" level="INFO">${referenceName} = hockenheimring</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
 <doc>Returns the text value of the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-11-06T22:07:15.990651" elapsed="0.020916"/>
+<status status="PASS" start="2024-11-13T20:46:21.214589" elapsed="0.010970"/>
 </kw>
 <kw name="Append To List" owner="Collections">
 <arg>${data}</arg>
-<arg>${columnValue}</arg>
+<arg>${referenceName}</arg>
 <doc>Adds ``values`` to the end of ``list``.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.011567" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.225559" elapsed="0.000000"/>
 </kw>
-<var name="${counter}">9</var>
-<status status="PASS" start="2024-11-06T22:07:15.989626" elapsed="0.021941"/>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.84")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.214589" elapsed="0.010970"/>
 </iter>
-<var>${counter}</var>
-<value>1</value>
-<value>${totalCloumns} + 1</value>
-<status status="PASS" start="2024-11-06T22:07:15.781177" elapsed="0.231388"/>
-</for>
-<break>
-<status status="PASS" start="2024-11-06T22:07:16.012565" elapsed="0.000000"/>
-</break>
-<status status="PASS" start="2024-11-06T22:07:15.768212" elapsed="0.244353"/>
-</branch>
-<status status="PASS" start="2024-11-06T22:07:15.768212" elapsed="0.244353"/>
-</if>
-<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="bc6a77591576919ad41ad5cb44afdce5", element="f.99FA4D25B8C4627AC3CDEB8385D81B36.d.49B7B29E10168BE013CB661CB7C95BF2.e.71")&gt;</var>
-<status status="PASS" start="2024-11-06T22:07:15.758239" elapsed="0.254326"/>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.226556" level="INFO">${count} = 11</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.226556" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.234535" level="INFO">${referenceName} = hungaroring</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.226556" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.234535" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.85")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.225559" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.235532" level="INFO">${count} = 12</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.234535" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.243511" level="INFO">${referenceName} = valencia</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.235532" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.243511" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.86")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.234535" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.244508" level="INFO">${count} = 13</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.244508" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.252488" level="INFO">${referenceName} = spa</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.244508" elapsed="0.007980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.252488" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.87")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.244508" elapsed="0.007980"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.253486" level="INFO">${count} = 14</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.252488" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.275425" level="INFO">${referenceName} = monza</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.253486" elapsed="0.021939"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.276423" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.88")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.252488" elapsed="0.023935"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.276423" level="INFO">${count} = 15</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.276423" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.305346" level="INFO">${referenceName} = marina_bay</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.276423" elapsed="0.028923"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.305346" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.89")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.276423" elapsed="0.028923"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.306344" level="INFO">${count} = 16</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.306344" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.323297" level="INFO">${referenceName} = fuji</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.306344" elapsed="0.016953"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.323297" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.90")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.306344" elapsed="0.016953"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.324295" level="INFO">${count} = 17</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.324295" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.331276" level="INFO">${referenceName} = shanghai</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.324295" elapsed="0.006981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.332274" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.91")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.323297" elapsed="0.008977"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.332274" level="INFO">${count} = 18</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.332274" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.339255" level="INFO">${referenceName} = interlagos</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.332274" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.340252" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.92")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.332274" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.340252" level="INFO">${count} = 19</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.340252" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.348231" level="INFO">${referenceName} = indianapolis</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.341250" elapsed="0.006981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.348231" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.93")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.340252" elapsed="0.007979"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.349228" level="INFO">${count} = 20</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.349228" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.357206" level="INFO">${referenceName} = nurburgring</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.349228" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.358213" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.94")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.349228" elapsed="0.008985"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.358213" level="INFO">${count} = 21</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.358213" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.366182" level="INFO">${referenceName} = imola</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.359202" elapsed="0.006980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.367181" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.95")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.358213" elapsed="0.008968"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.367181" level="INFO">${count} = 22</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.367181" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.375162" level="INFO">${referenceName} = suzuka</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.367181" elapsed="0.007981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.375162" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.96")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.367181" elapsed="0.007981"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.376156" level="INFO">${count} = 23</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.376156" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.384136" level="INFO">${referenceName} = vegas</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.376156" elapsed="0.007980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.384136" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.97")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.375162" elapsed="0.008974"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.385133" level="INFO">${count} = 24</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.384136" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.393111" level="INFO">${referenceName} = yas_marina</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.385133" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.393111" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.98")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.384136" elapsed="0.008975"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.394108" level="INFO">${count} = 25</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.394108" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.402094" level="INFO">${referenceName} = galvez</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.394108" elapsed="0.007986"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.403085" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.99")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.393111" elapsed="0.009974"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.403085" level="INFO">${count} = 26</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.403085" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.410065" level="INFO">${referenceName} = jerez</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.403085" elapsed="0.006980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.411063" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.100")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.403085" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.411063" level="INFO">${count} = 27</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.411063" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.418044" level="INFO">${referenceName} = estoril</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.411063" elapsed="0.006981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.418044" elapsed="0.000998"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.101")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.411063" elapsed="0.007979"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.419042" level="INFO">${count} = 28</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.419042" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.426023" level="INFO">${referenceName} = okayama</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.419042" elapsed="0.006981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.427020" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.102")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.419042" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.427020" level="INFO">${count} = 29</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.427020" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.434999" level="INFO">${referenceName} = adelaide</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.428017" elapsed="0.006982"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.434999" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.103")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.427020" elapsed="0.007979"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.435996" level="INFO">${count} = 30</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.434999" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.442978" level="INFO">${referenceName} = kyalami</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.435996" elapsed="0.006982"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.442978" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.104")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.434999" elapsed="0.007979"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.443975" level="INFO">${count} = 31</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.443975" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.450956" level="INFO">${referenceName} = donington</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.443975" elapsed="0.006981"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.450956" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.105")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.442978" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.451953" level="INFO">${count} = 32</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.451953" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.458935" level="INFO">${referenceName} = rodriguez</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.451953" elapsed="0.006982"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.458935" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.106")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.451953" elapsed="0.006982"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.458935" level="INFO">${count} = 33</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.458935" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.465918" level="INFO">${referenceName} = phoenix</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.459931" elapsed="0.005987"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.466914" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.107")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.458935" elapsed="0.007979"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.466914" level="INFO">${count} = 34</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.466914" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.474893" level="INFO">${referenceName} = ricard</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.466914" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.474893" elapsed="0.000997"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.108")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.466914" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.475890" level="INFO">${count} = 35</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.475890" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.483868" level="INFO">${referenceName} = yeongam</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.475890" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.483868" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.109")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.475890" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.484865" level="INFO">${count} = 36</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.483868" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.492845" level="INFO">${referenceName} = jacarepagua</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.484865" elapsed="0.007980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.492845" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.110")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.483868" elapsed="0.008977"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.493842" level="INFO">${count} = 37</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.493842" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.501820" level="INFO">${referenceName} = detroit</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.493842" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.501820" elapsed="0.000998"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.111")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.493842" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.502818" level="INFO">${count} = 38</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.502818" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.510796" level="INFO">${referenceName} = brands_hatch</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.502818" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.510796" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.112")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.502818" elapsed="0.007978"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.511801" level="INFO">${count} = 39</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.511801" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.520771" level="INFO">${referenceName} = zandvoort</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.511801" elapsed="0.008970"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.520771" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.113")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.511801" elapsed="0.008970"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.521769" level="INFO">${count} = 40</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.521769" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.529745" level="INFO">${referenceName} = zolder</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.521769" elapsed="0.007976"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.529745" elapsed="0.000998"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.114")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.521769" elapsed="0.008974"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.530743" level="INFO">${count} = 41</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.530743" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.539719" level="INFO">${referenceName} = dijon</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.531740" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.539719" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.115")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.530743" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.540716" level="INFO">${count} = 42</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.540716" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.548695" level="INFO">${referenceName} = dallas</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.540716" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.549692" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.116")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.540716" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.549692" level="INFO">${count} = 43</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.549692" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.558674" level="INFO">${referenceName} = long_beach</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.550689" elapsed="0.007985"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.558674" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.117")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.549692" elapsed="0.008982"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.559665" level="INFO">${count} = 44</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.559665" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.567645" level="INFO">${referenceName} = las_vegas</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.559665" elapsed="0.007980"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.567645" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.118")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.558674" elapsed="0.009977"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.568651" level="INFO">${count} = 45</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.568651" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.576621" level="INFO">${referenceName} = jarama</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.568651" elapsed="0.007970"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.577617" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.119")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.568651" elapsed="0.008966"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.577617" level="INFO">${count} = 46</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.577617" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.586594" level="INFO">${referenceName} = watkins_glen</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.577617" elapsed="0.008977"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.586594" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.120")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.577617" elapsed="0.008977"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.587591" level="INFO">${count} = 47</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.586594" elapsed="0.000997"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.595570" level="INFO">${referenceName} = anderstorp</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.587591" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.595570" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.121")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.586594" elapsed="0.008976"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.596567" level="INFO">${count} = 48</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.596567" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.604545" level="INFO">${referenceName} = mosport</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.596567" elapsed="0.007978"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.604545" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.122")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.595570" elapsed="0.008975"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.604545" level="INFO">${count} = 49</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.604545" elapsed="0.000998"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.612525" level="INFO">${referenceName} = montjuic</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.605543" elapsed="0.006982"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.612525" elapsed="0.000997"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.123")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.604545" elapsed="0.008977"/>
+</iter>
+<iter>
+<kw name="Evaluate" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.613522" level="INFO">${count} = 50</msg>
+<var>${count}</var>
+<arg>${count} + 1</arg>
+<doc>Evaluates the given expression in Python and returns the result.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.613522" elapsed="0.000000"/>
+</kw>
+<kw name="Get Text" owner="SeleniumLibrary">
+<msg time="2024-11-13T20:46:21.621501" level="INFO">${referenceName} = nivelles</msg>
+<var>${referenceName}</var>
+<arg>${element}</arg>
+<doc>Returns the text value of the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.613522" elapsed="0.007979"/>
+</kw>
+<kw name="Append To List" owner="Collections">
+<arg>${data}</arg>
+<arg>${referenceName}</arg>
+<doc>Adds ``values`` to the end of ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.621501" elapsed="0.000000"/>
+</kw>
+<var name="${element}">&lt;selenium.webdriver.remote.webelement.WebElement (session="b4b723f10ba6c3e2461cf78173f35b61", element="f.E6E1ED1DE622018F958DDFD4E928AC3D.d.8D721E2B38AB3C7CC2DBFD29A459C325.e.124")&gt;</var>
+<status status="PASS" start="2024-11-13T20:46:21.613522" elapsed="0.007979"/>
 </iter>
 <var>${element}</var>
 <value>@{circuits}</value>
-<status status="PASS" start="2024-11-06T22:07:15.737295" elapsed="0.275270"/>
+<status status="PASS" start="2024-11-13T20:46:21.061032" elapsed="0.560469"/>
 </for>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-06T22:07:16.012565" level="INFO">['2', 'sepang', 'Sepang International Circuit', 'Kuala Lumpur', 'Malaysia', '2.76083', '101.738', '18', 'http://en.wikipedia.org/wiki/Sepang_International_Circuit']</msg>
+<msg time="2024-11-13T20:46:21.622498" level="INFO">['albert_park', 'sepang', 'bahrain', 'catalunya', 'istanbul', 'monaco', 'villeneuve', 'magny_cours', 'silverstone', 'hockenheimring', 'hungaroring', 'valencia', 'spa', 'monza', 'marina_bay', 'fuji', 'shanghai', 'interlagos', 'indianapolis', 'nurburgring', 'imola', 'suzuka', 'vegas', 'yas_marina', 'galvez', 'jerez', 'estoril', 'okayama', 'adelaide', 'kyalami', 'donington', 'rodriguez', 'phoenix', 'ricard', 'yeongam', 'jacarepagua', 'detroit', 'brands_hatch', 'zandvoort', 'zolder', 'dijon', 'dallas', 'long_beach', 'las_vegas', 'jarama', 'watkins_glen', 'anderstorp', 'mosport', 'montjuic', 'nivelles']</msg>
 <arg>${data}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.012565" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.621501" elapsed="0.000997"/>
 </kw>
 <return>
 <value>${data}</value>
-<status status="PASS" start="2024-11-06T22:07:16.012565" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.622498" elapsed="0.000000"/>
 </return>
-<msg time="2024-11-06T22:07:16.012565" level="INFO">${dataFetchedFromTable} = ['2', 'sepang', 'Sepang International Circuit', 'Kuala Lumpur', 'Malaysia', '2.76083', '101.738', '18', 'http://en.wikipedia.org/wiki/Sepang_International_Circuit']</msg>
+<msg time="2024-11-13T20:46:21.622498" level="INFO">${dataFetchedFromTable} = ['albert_park', 'sepang', 'bahrain', 'catalunya', 'istanbul', 'monaco', 'villeneuve', 'magny_cours', 'silverstone', 'hockenheimring', 'hungaroring', 'valencia', 'spa', 'monza', 'marina_bay', 'fuji', '...</msg>
 <var>${dataFetchedFromTable}</var>
-<arg>${TargetCircuitToFetchFromCsv}</arg>
-<status status="PASS" start="2024-11-06T22:07:14.717849" elapsed="1.295713"/>
+<status status="PASS" start="2024-11-13T20:46:20.039638" elapsed="1.582860"/>
 </kw>
 <kw name="Get CSV file path">
 <kw name="Project Root Directory" owner="HelperMethods">
-<msg time="2024-11-06T22:07:16.013562" level="INFO">${projectRootDirectory} = E:\Kirill_Milestone1</msg>
+<msg time="2024-11-13T20:46:21.623495" level="INFO">${projectRootDirectory} = D:\Kiriil-RobotFramework_Milestone1-main</msg>
 <var>${projectRootDirectory}</var>
-<status status="PASS" start="2024-11-06T22:07:16.013562" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.622498" elapsed="0.000997"/>
+</kw>
+<kw name="List Files In Directory" owner="OperatingSystem">
+<msg time="2024-11-13T20:46:21.623495" level="INFO" html="true">Listing contents of directory '&lt;a href="file://D:\Kiriil-RobotFramework_Milestone1-main\Downloads"&gt;D:\Kiriil-RobotFramework_Milestone1-main\Downloads&lt;/a&gt;'.</msg>
+<msg time="2024-11-13T20:46:21.623495" level="INFO">1 file:
+circuits.csv</msg>
+<msg time="2024-11-13T20:46:21.623495" level="INFO">${files} = ['circuits.csv']</msg>
+<var>${files}</var>
+<arg>${projectRootDirectory}${DefaultDownloadDirectory}</arg>
+<doc>Wrapper for `List Directory` that returns only files.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.623495" elapsed="0.000000"/>
+</kw>
+<kw name="Get From List" owner="Collections">
+<msg time="2024-11-13T20:46:21.624493" level="INFO">${file} = circuits.csv</msg>
+<var>${file}</var>
+<arg>${files}</arg>
+<arg>0</arg>
+<doc>Returns the value specified with an ``index`` from ``list``.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.624493" elapsed="0.000000"/>
+</kw>
+<kw name="Log" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.624493" level="INFO">circuits.csv</msg>
+<arg>${file}</arg>
+<doc>Logs the given message with the given level.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.624493" elapsed="0.000000"/>
+</kw>
+<kw name="Set Variable" owner="BuiltIn">
+<msg time="2024-11-13T20:46:21.624493" level="INFO">${file_name} = circuits.csv</msg>
+<var>${file_name}</var>
+<arg>${file}</arg>
+<doc>Returns the given values which can then be assigned to a variables.</doc>
+<status status="PASS" start="2024-11-13T20:46:21.624493" elapsed="0.000000"/>
 </kw>
 <kw name="Catenate" owner="BuiltIn">
-<msg time="2024-11-06T22:07:16.014559" level="INFO">${filePath} = E:\Kirill_Milestone1\Downloads\circuits.csv</msg>
+<msg time="2024-11-13T20:46:21.625490" level="INFO">${filePath} = D:\Kiriil-RobotFramework_Milestone1-main\Downloads\circuits.csv</msg>
 <var>${filePath}</var>
-<arg>${projectRootDirectory}${DefaultDownloadDirectory}${DataExplorerCsvFilePath}</arg>
+<arg>${projectRootDirectory}${DefaultDownloadDirectory}${file_name}</arg>
 <doc>Catenates the given items together and returns the resulted string.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.013562" elapsed="0.000997"/>
+<status status="PASS" start="2024-11-13T20:46:21.624493" elapsed="0.000997"/>
 </kw>
 <variable name="${csvFilePath}" scope="SUITE">
 <var>${filePath}</var>
-<status status="PASS" start="2024-11-06T22:07:16.014559" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.625490" elapsed="0.000000"/>
 </variable>
-<status status="PASS" start="2024-11-06T22:07:16.013562" elapsed="0.000997"/>
+<status status="PASS" start="2024-11-13T20:46:21.622498" elapsed="0.002992"/>
 </kw>
-<kw name="Fetch Row From Csv" owner="HelperMethods">
-<msg time="2024-11-06T22:07:16.015584" level="INFO">${dataFtechedFromCscFileDownloaded} = ['2', 'sepang', 'Sepang International Circuit', 'Kuala Lumpur', 'Malaysia', '2.76083', '101.738', '18', 'http://en.wikipedia.org/wiki/Sepang_International_Circuit']</msg>
+<kw name="Fetch Second Column From Csvfile" owner="HelperMethods">
+<msg time="2024-11-13T20:46:21.638456" level="INFO">${dataFtechedFromCscFileDownloaded} = ['albert_park', 'sepang', 'bahrain', 'catalunya', 'istanbul', 'monaco', 'villeneuve', 'magny_cours', 'silverstone', 'hockenheimring', 'hungaroring', 'valencia', 'spa', 'monza', 'marina_bay', 'fuji', '...</msg>
 <var>${dataFtechedFromCscFileDownloaded}</var>
 <arg>${csvFilePath}</arg>
-<arg>${TargetCircuitToFetchFromCsv}</arg>
-<status status="PASS" start="2024-11-06T22:07:16.014559" elapsed="0.001025"/>
+<status status="PASS" start="2024-11-13T20:46:21.625490" elapsed="0.012966"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-06T22:07:16.015584" level="INFO">['2', 'sepang', 'Sepang International Circuit', 'Kuala Lumpur', 'Malaysia', '2.76083', '101.738', '18', 'http://en.wikipedia.org/wiki/Sepang_International_Circuit']</msg>
+<msg time="2024-11-13T20:46:21.638456" level="INFO">['albert_park', 'sepang', 'bahrain', 'catalunya', 'istanbul', 'monaco', 'villeneuve', 'magny_cours', 'silverstone', 'hockenheimring', 'hungaroring', 'valencia', 'spa', 'monza', 'marina_bay', 'fuji', 'shanghai', 'interlagos', 'indianapolis', 'nurburgring', 'imola', 'suzuka', 'vegas', 'yas_marina', 'galvez', 'jerez', 'estoril', 'okayama', 'adelaide', 'kyalami', 'donington', 'rodriguez', 'phoenix', 'ricard', 'yeongam', 'jacarepagua', 'detroit', 'brands_hatch', 'zandvoort', 'zolder', 'dijon', 'dallas', 'long_beach', 'las_vegas', 'jarama', 'watkins_glen', 'anderstorp', 'mosport', 'montjuic', 'nivelles']</msg>
 <arg>${dataFetchedFromTable}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.015584" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.638456" elapsed="0.000000"/>
 </kw>
 <kw name="Log" owner="BuiltIn">
-<msg time="2024-11-06T22:07:16.015584" level="INFO">['2', 'sepang', 'Sepang International Circuit', 'Kuala Lumpur', 'Malaysia', '2.76083', '101.738', '18', 'http://en.wikipedia.org/wiki/Sepang_International_Circuit']</msg>
+<msg time="2024-11-13T20:46:21.639452" level="INFO">['albert_park', 'sepang', 'bahrain', 'catalunya', 'istanbul', 'monaco', 'villeneuve', 'magny_cours', 'silverstone', 'hockenheimring', 'hungaroring', 'valencia', 'spa', 'monza', 'marina_bay', 'fuji', 'shanghai', 'interlagos', 'indianapolis', 'nurburgring', 'imola', 'suzuka', 'vegas', 'yas_marina', 'galvez', 'jerez', 'estoril', 'okayama', 'adelaide', 'kyalami', 'donington', 'rodriguez', 'phoenix', 'ricard', 'yeongam', 'jacarepagua', 'detroit', 'brands_hatch', 'zandvoort', 'zolder', 'dijon', 'dallas', 'long_beach', 'las_vegas', 'jarama', 'watkins_glen', 'anderstorp', 'mosport', 'montjuic', 'nivelles']</msg>
 <arg>${dataFtechedFromCscFileDownloaded}</arg>
 <doc>Logs the given message with the given level.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.015584" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.639452" elapsed="0.000000"/>
 </kw>
 <kw name="Should Be Equal" owner="BuiltIn">
 <arg>${dataFetchedFromTable}</arg>
 <arg>${dataFtechedFromCscFileDownloaded}</arg>
 <doc>Fails if the given objects are unequal.</doc>
-<status status="PASS" start="2024-11-06T22:07:16.016581" elapsed="0.000000"/>
+<status status="PASS" start="2024-11-13T20:46:21.639452" elapsed="0.000000"/>
 </kw>
-<status status="PASS" start="2024-11-06T22:07:04.112176" elapsed="11.904405"/>
+<status status="PASS" start="2024-11-13T20:46:09.580465" elapsed="12.058987"/>
 </test>
-<status status="PASS" start="2024-11-06T22:06:58.837513" elapsed="17.179068"/>
+<status status="PASS" start="2024-11-13T20:46:05.837067" elapsed="15.803382"/>
 </suite>
-<status status="PASS" start="2024-11-06T22:06:58.807593" elapsed="17.209986"/>
+<status status="PASS" start="2024-11-13T20:46:05.813098" elapsed="15.827351"/>
 </suite>
 <statistics>
 <total>
